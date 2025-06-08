@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Order Partner Pterodactyl</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;900&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+
+<link href="style.css" rel="stylesheet"/></head>
+<body>
+<div class="container">
+<div style="
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 0 0 12px #00f0ff, 0 0 20px #00f0ff;
+  margin-bottom: 20px;">
+  Partner Panel
+</div>
+<div class="container">
+<div class="box">
+<h2>1. Panduan Pemesanan</h2>
+<ol>
+<li>Masukkan nama Partner Panel Anda.</li>
+<li>Pilih tipe produk dan metode pembayaran.</li>
+<li>Klik <b>Kirim Pesanan</b>, lalu akan dipandu ke WhatsApp admin.</li>
+<li>Partner Panel akan dikirimkan setelah pembayaran diverifikasi.</li>
+</ol>
+</div>
+<div class="box">
+<h2>2. Masukkan Nama Partner Panel</h2>
+<input id="namaPartner" placeholder="Masukkan nama Partner Panel Anda" type="text"/>
+</div>
+<div class="box">
+<h2>3. Pilih Produk</h2>
+<div class="radio-grid">
+<label class="radio-option">
+<input name="size" type="radio" value="Admin Panel Bot"/>
+<div style="font-weight:600; font-size:1rem; color:#fff; text-shadow:0 0 6px #00f0ff;">Partner Panel Bot</div>
+<div style="color:#FFFFFF; font-weight:bold;">Rp 20.000</div>
+<p style="font-weight:bold; color:#ccc; margin-bottom:4px;"></p>
+<ul style="list-style-type: none; padding-left: 0;">
+<li>Keuntungan Partner Panel Bot:</li>
+<li>ᯤ Bisa Open Reseller Panel</li>
+<li>ᯤ Bisa Open AdminnPanel Bot</li>
+<li>ᯤ Bisa Open Panel</li>
+<li>ᯤ Bisa Open Sewa Bot</li>
+<li>ᯤ Bisa Run Sc</li>
+<li>ᯤ Free Sc Push / Cpanel</li>
+<li>ᯤ Freee Tutor</li>
+</ul>
+</label>
+</div>
+<div class="box">
+<h2>4. Pilih Metode Pembayaran</h2>
+<div class="pay-method">
+<label><input name="pay" type="radio" value="Dana"/> Dana</label>
+<label><input name="pay" type="radio" value="QRIS"/> QRIS</label>
+</div>
+<button onclick="navigator.clipboard.writeText('083163985132');alert('Nomor Dana disalin!')">Salin Nomor DANA</button>
+<img alt="QRIS" class="qris" src="qris.jpg"/>
+</div>
+<div class="box">
+<h2>5. Upload Bukti Pembayaran</h2>
+<input id="fileInput" type="file">
+<div id="uploadStatus" style="margin-top:10px; font-size:0.9rem; color:#ccc;"></div>
+</input></div>
+<button onclick="kirimWA()">Kirim Pesanan</button>
+<a href="index.html">
+<button class="back-home">← Kembali ke Beranda</button>
+</a>
+<div class="footer">
+  © Powered By FarinShop–Official
+</div>
+
+</div></div></div><script src="script.js"></script></body>
+</html>
